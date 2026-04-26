@@ -143,6 +143,7 @@ lessonLMS/
 ## 📫 Contact
 
 Developed by **[Md. Nayemur Rahman]**
+Instructor, ProjuktiPlus Academy
 
 - **Email:** [nayemspecial@gmail.com]
     
