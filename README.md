@@ -5,9 +5,6 @@
 
 This project serves as a perfect example of advanced WordPress theme development concepts, including AJAX, custom data handling, and building interactive admin widgets.
 
-## 🚀 Live Demo
-
-View the live project demo here: **[https://your-live-project-link.com](https://www.google.com/search?q=https://your-live-project-link.com)**
 
 ---
 
