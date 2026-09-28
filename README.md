@@ -46,7 +46,7 @@ This theme is packed with custom-coded features required for a modern LMS:
 
 ---
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 - **Backend:** PHP (OOP Principles)
     
@@ -63,7 +63,7 @@ This theme is packed with custom-coded features required for a modern LMS:
 
 ---
 
-## ⚙️ Installation Guide
+## Installation Guide
 
 Follow these steps to set up the `lessonLMS` theme on your WordPress installation:
 
@@ -100,7 +100,7 @@ Follow these steps to set up the `lessonLMS` theme on your WordPress installatio
 
 ---
 
-## 📂 Theme File Structure
+## Theme File Structure
 
 Based on the provided directory image, the theme is organized as follows:
 
@@ -137,7 +137,7 @@ lessonLMS/
 
 ---
 
-## 📫 Contact
+## Contact
 
 Developed by **[Md. Nayemur Rahman]**
 Instructor, ProjuktiPlus Academy
