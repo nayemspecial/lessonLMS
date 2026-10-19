@@ -1,149 +1,102 @@
+<div align="center">
 
-# lessonLMS - A Custom WordPress LMS Theme
+# 🎓 lessonLMS — WordPress LMS Theme
 
-**lessonLMS** is a custom-built, lightweight WordPress theme that transforms your site into a personal Learning Management System (LMS). It is not dependent on heavy third-party plugins; instead, it leverages core WordPress functions (like Custom Post Types, Meta Boxes, and the Customizer API) to ensure maximum performance and flexibility.
+**A lightweight, plugin-free WordPress theme to build your own online course platform.**
 
-This project serves as a perfect example of advanced WordPress theme development concepts, including AJAX, custom data handling, and building interactive admin widgets.
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![WordPress](https://img.shields.io/badge/WordPress-Theme-blue?logo=wordpress)](https://wordpress.org)
+[![PHP](https://img.shields.io/badge/PHP-7.4%2B-777BB4?logo=php&logoColor=white)](https://php.net)
+[![Stars](https://img.shields.io/github/stars/nayemspecial/lessonLMS?style=social)](https://github.com/nayemspecial/lessonLMS/stargazers)
 
+[**🔴 Live Demo**](https://projuktiplus.com/lesson) · [**🐞 Report Bug**](https://github.com/nayemspecial/lessonLMS/issues) · [**✨ Request Feature**](https://github.com/nayemspecial/lessonLMS/issues)
 
----
+![lessonLMS Screenshot](screenshot.png)
 
-## 📖 Table of Contents
+</div>
 
-- [Key Features](https://www.google.com/search?q=%23-key-features)
-    
-- [Technologies Used](https://www.google.com/search?q=%23-technologies-used)
-    
-- [Installation Guide](https://www.google.com/search?q=%23-installation-guide)
-    
-- [Theme File Structure](https://www.google.com/search?q=%23-theme-file-structure)
-    
-- [Contact](https://www.google.com/search?q=%23-contact)
-    
+## Why lessonLMS?
 
----
+Most WordPress LMS solutions depend on heavy plugins that slow down your site.
+**lessonLMS** is a custom-coded WordPress LMS theme built only with core WordPress
+APIs (Custom Post Types, Meta Boxes, Customizer, AJAX), so it stays fast, simple
+and easy to customize. It is also a great real-world example for learning
+WordPress theme development.
 
-## ✨ Key Features
+## ✨ Features
 
-This theme is packed with custom-coded features required for a modern LMS:
+- 📚 **Course Custom Post Type** — create and manage courses from the dashboard
+- 🧾 **Course Meta Boxes** — price, original price, video hours, article count, language, subtitles, "What you'll learn", requirements, target audience
+- ⚡ **AJAX Enrollment** — enroll in a course with one click, no page reload
+- ⭐ **Review & Rating System** — student reviews with automatic average rating and review count
+- 🎨 **Full Customizer Support** — edit Hero, Features, CTA, Blog and Footer sections live
+- 💬 **Testimonials** — dedicated custom post type for student testimonials
+- 📊 **Admin Dashboard Widget** — total enrollments and latest student sign-ups at a glance
+- 📱 **Responsive Design** — works on mobile, tablet and desktop
+- 🧩 **Modular Code** — clean `inc/` and `template-parts/` structure
+- 🧭 **Menus & Widgets** — Primary, Mobile, Footer menus and a Blog Sidebar
 
-- **"Course" Custom Post Type:** A dedicated `course` post type allows for easy creation and management of courses directly from the admin dashboard.
-    
-- **Custom Meta Boxes:** Each course includes a comprehensive meta box to store details like Price, Original Price, Video Hours, Article Count, Language, Subtitles, and lists for "What You'll Learn," "Requirements," and "Target Audience."
-    
-- **AJAX-Based Enrollment:** Users can enroll in courses with a single click, without a page reload. This is powered by the WordPress AJAX API (`wp_ajax_`).
-    
-- **Custom Review System:** Students can submit ratings and reviews for courses. The theme automatically calculates and displays the average rating and total review count.
-    
-- **Full Theme Customizer Support:** The `WP_Customize_API` is used extensively, allowing admins to edit most sections of the theme (Hero, Features, CTA, Blog, Footer) directly from the live customizer.
-    
-- **Admin Dashboard Widget:** A custom dashboard widget shows "at-a-glance" enrollment statistics, including total enrollments and a list of the most recent student sign-ups.
-    
-- **Modular File Structure:** The theme's frontend sections (e.g., `hero.php`, `features.php`) are neatly organized in a `sections/` folder for clean and maintainable code.
-    
-- **Custom Menus & Sidebars:** Registered multiple menu locations (Primary, Mobile, Footer) and a dedicated "Blog Sidebar" widget area.
-    
+## 🛠️ Built With
 
----
+PHP · WordPress APIs (CPT, Meta Box, Customizer, AJAX, Widgets) · JavaScript (jQuery) · CSS3 · Slick Slider · Boxicons · Font Awesome · MySQL
 
-## 🛠️ Technologies Used
+## ⚙️ Installation
 
-- **Backend:** PHP (OOP Principles)
-    
-- **WordPress APIs:** Custom Post Type (CPT) API, Meta Box API, Customizer API, AJAX API, Widgets API, Transients API (implied for performance)
-    
-- **Frontend:** JavaScript (jQuery), AJAX
-    
-- **Styling:** CSS3, Slick Slider, Boxicons, Font Awesome
-    
-- **Database:** MySQL (via core WordPress functions like `get_post_meta`, `$wpdb`)
-    
-- **Tools:** Git, VS Code
-    
+1. **Download or clone**
+```bash
+   git clone https://github.com/nayemspecial/lessonLMS.git
+```
+2. Copy the folder to `wp-content/themes/`
+3. Go to **Appearance → Themes** and activate **LessonLMS**
+4. Go to **Settings → Permalinks** and click **Save Changes** (required, otherwise course pages show 404)
+5. Set up menus, customize sections, and add courses from **Courses → Add New Course**
 
----
-
-## ⚙️ Installation Guide
-
-Follow these steps to set up the `lessonLMS` theme on your WordPress installation:
-
-1. **Clone the Repository:**
-    
-    Bash
-    
-    ```
-    git clone https://github.com/nayemspecial/lessonLMS.git
-    ```
-    
-2. Upload Theme:
-    
-    Upload the entire lessonLMS folder to your WordPress installation's wp-content/themes/ directory.
-    
-3. Activate Theme:
-    
-    In your WordPress dashboard, navigate to Appearance > Themes. Find lessonLMS and click "Activate".
-    
-4. Flush Permalinks (Crucial Step):
-    
-    After activation, navigate to Settings > Permalinks. Do not change anything; just click the "Save Changes" button. This is essential to register the course custom post type slug and prevent "404 Not Found" errors.
-    
-5. **Initial Setup:**
-    
-    - Go to `Appearance > Menus` to set up your navigation.
-        
-    - Go to `Appearance > Customize` to update the Hero, Footer, and other sections.
-        
-    - Go to `Appearance > Widgets` to populate your Blog Sidebar.
-        
-    - Start adding new courses from the `Courses > Add New Course` menu in your dashboard.
-        
-
----
-
-## 📂 Theme File Structure
-
-Based on the provided directory image, the theme is organized as follows:
+## 📂 Folder Structure
 
 ```
 lessonLMS/
-│
-├── assets/
-│   ├── css/
-│   │   ├── responsive.css
-│   │   └── style.css
-│   ├── images/
-│   └── js/
-│       └── script.js
-│
-├── sections/
-│   ├── blog.php
-│   ├── courses.php
-│   ├── cta.php
-│   ├── features.php
-│   ├── hero.php
-│   └── testimonials.php
-│
+├── assets/            # CSS, JS, images
+├── inc/
+│   ├── admin/         # roles, dashboard redirect, capabilities
+│   ├── cpt/           # courses & testimonials
+│   ├── customizer/    # hero, feature, cta, blog, footer
+│   ├── reviews/       # review submit & stats
+│   └── student-enroll/# AJAX enrollment & admin data
+├── template-parts/    # sections (hero, courses, cta, ...) & content
 ├── archive-course.php
-├── footer.php
-├── functions.php
-├── header.php
-├── index.php
-├── page.php
-├── search.php
-├── sidebar.php
 ├── single-course.php
+├── front-page.php
+├── functions.php
 └── style.css
 ```
 
----
+## 🗺️ Roadmap
 
-## 📫 Contact
+- [ ] Prevent duplicate enrollments
+- [ ] Nonce security for AJAX requests
+- [ ] Lesson/video player
+- [ ] Student dashboard
+- [ ] Payment gateway integration
 
-Developed by **[Md. Nayemur Rahman]**
-Instructor, ProjuktiPlus Academy
+## 🤝 Contributing
 
-- **Email:** [nayemspecial@gmail.com]
-    
-- **LinkedIn:** [[linkedin.com/in/your-profile](https://linkedin.com/in/nayemspecial)]
-    
-    
+Contributions, issues and feature requests are welcome!
+Fork the repo, create a branch, and open a pull request.
+
+## 🇧🇩 বাংলায় সংক্ষেপে
+
+**lessonLMS** একটি হালকা ও কাস্টম WordPress LMS থিম। কোনো ভারী প্লাগিন ছাড়াই
+নিজের অনলাইন কোর্স ওয়েবসাইট বানানো যায়। কোর্স ম্যানেজমেন্ট, AJAX এনরোলমেন্ট,
+রিভিউ ও রেটিং সিস্টেম এবং Customizer সাপোর্ট এতে আছে। বাংলাদেশি ডেভেলপার ও
+শিক্ষার্থীদের WordPress থিম ডেভেলপমেন্ট শেখার জন্যও এটি একটি ভালো উদাহরণ।
+
+## 📄 License
+
+Distributed under the [MIT License](LICENSE).
+
+## 📫 Author
+
+**Md. Nayemur Rahman** — Founder and Lead Instructor, ProjuktiPlus Academy
+📧 nayemspecial@gmail.com · 🔗 [LinkedIn](https://linkedin.com/in/nayemspecial)
+
+⭐ If you find this project useful, please give it a star!
