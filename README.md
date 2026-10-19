@@ -40,8 +40,6 @@ WordPress theme development.
 
 PHP · WordPress APIs (CPT, Meta Box, Customizer, AJAX, Widgets) · JavaScript (jQuery) · CSS3 · Slick Slider · Boxicons · Font Awesome · MySQL
 
-## ⚙️ Installation
-
 1. **Download or clone**
 ```bash
    git clone https://github.com/nayemspecial/lessonLMS.git
@@ -51,7 +49,10 @@ PHP · WordPress APIs (CPT, Meta Box, Customizer, AJAX, Widgets) · JavaScript (
 4. Go to **Settings → Permalinks** and click **Save Changes** (required, otherwise course pages show 404)
 5. Set up menus, customize sections, and add courses from **Courses → Add New Course**
 
-## 📂 Folder Structure
+
+## Theme File Structure
+
+Based on the provided directory image, the theme is organized as follows:
 
 ```
 lessonLMS/
@@ -69,14 +70,6 @@ lessonLMS/
 ├── functions.php
 └── style.css
 ```
-
-## 🗺️ Roadmap
-
-- [ ] Prevent duplicate enrollments
-- [ ] Nonce security for AJAX requests
-- [ ] Lesson/video player
-- [ ] Student dashboard
-- [ ] Payment gateway integration
 
 ## 🤝 Contributing
 
